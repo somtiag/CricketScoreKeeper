@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorOfButton">#B2DFDB</color>
-    <color name="color1OfButton">#00B8D4</color>
-    <color name="colorOfText">#000000</color>
-    <color name="colorOfInning">#D50000</color>
+    <!--<color name="colorPrimary">#03A9F4</color>-->
+    <!--<color name="colorPrimaryDark">#0288D1</color>-->
+   <!-- <color name="colorAccent">#FFFFFF</color>-->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name ="colorLight_Primary">#BBDEFB</color>
+
+    <color name="colorOfButton">#BBDEFB</color>
+    <color name="color1OfButton">#BBDEFB</color>
+    <color name="colorOfText">#212121</color>
+    <color name="colorOfInning">#000000</color>
+    <color name="colorOfBkgrnd">#BBDEFB</color>
+    <color name="colorOfReset">#009688</color>
+    <color name="colorOfScoreTitle">#2196f3</color>
+    <color name="teamcolor">#FFFFFF</color>
+    <color name="scorecolor">#FFFFFF</color>
+
+
 </resources>

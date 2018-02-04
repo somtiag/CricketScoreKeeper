@@ -7,17 +7,26 @@
     android:fillViewport="true">
 
     <RelativeLayout
+        android:id="@+id/totalView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-        android:fillViewport="true"
+        android:background="@color/colorAccent"
+        android:gravity="bottom"
         android:orientation="vertical"
-        android:background="#536dfe"
         tools:context="com.example.android.cricketscorekeeper.MainActivity">
 
+        <ImageView
+            android:id="@+id/cricketImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cricket" />
+
         <LinearLayout
-            android:id = "@+id/team_Layout"
+            android:id="@+id/team_Layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -84,7 +93,7 @@
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:background = "@color/colorOfScoreTitle"
+                    android:background="@color/colorOfScoreTitle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="4dp"
@@ -179,9 +188,8 @@
 
             </View>
 
-
             <LinearLayout
-               android:id = "@+id/teamB_Layout"
+                android:id="@+id/teamB_Layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -238,7 +246,7 @@
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:background = "@color/colorOfScoreTitle"
+                    android:background="@color/colorOfScoreTitle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="4dp"
@@ -322,34 +330,35 @@
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity = "center"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="360dp"
-            android:orientation="horizontal"
-            >
-        <Button
-            android:id="@+id/changeInning_button_view"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="@color/colorOfButton"
-            android:onClick="change_inning"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="Change Inning"
-            android:textColor="@color/colorOfText"
-            android:textSize="14sp"
-            style="?android:attr/borderlessButtonStyle"/>
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/changeInning_button_view"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorOfButton"
+                android:onClick="change_inning"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Change Inning"
+                android:textColor="@color/colorOfText"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:id = "@+id/wickets_Layout"
+            android:id="@+id/wickets_Layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -508,24 +517,30 @@
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/resetscore_button_view"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_above="@id/wickets_Layout"
-            android:layout_gravity="center"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:background="@color/colorPrimaryDark"
+        <LinearLayout
+            android:id="@+id/resetLayoutView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wickets_Layout"
             android:gravity="center"
-            android:onClick="resetScore"
-            android:text="R E S E T"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            style="?android:attr/borderlessButtonStyle"/>
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/resetscore_button_view"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:onClick="resetScore"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="R E S E T"
+                android:textColor="@color/teamcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
